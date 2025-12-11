@@ -27,7 +27,7 @@ variable "availability_zones" {
 }
 
 output "availability_zones" {
-  value = var.availability_zones[0]
+  value = var.availability_zones[1]
 }
 
 # Map
