@@ -29,3 +29,17 @@ variable "availability_zones" {
 output "availability_zones" {
   value = var.availability_zones[0]
 }
+
+# Map
+
+variable "image_ids" {
+  type 	= map
+  default 	= {
+    a = 100,
+    b = "xyz"
+  }
+}
+
+output "image_ids" {
+  value = var.image_ids["a"]
+}
